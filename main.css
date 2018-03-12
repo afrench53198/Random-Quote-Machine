@@ -1,0 +1,101 @@
+:root {
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  margin: 8px; }
+
+body {
+  background-color: #1D1F20; }
+
+.container {
+  background-color: white;
+  border-radius: 5px;
+  color: #1D1F20;
+  height: 80%;
+  padding: 8px;
+  display: grid;
+  display: -ms-grid;
+  justify-content: center;
+  align-content: center; }
+
+.btn-group {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px; }
+  .btn-group button {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    outline: none;
+    border: none;
+    padding: 8px;
+    background: white;
+    color: #1D1F20;
+    border-radius: 5px;
+    justify-self: stretch;
+    margin-top: 5%;
+    text-align: center; }
+    .btn-group button:hover {
+      filter: brightness(50%); }
+
+#previous {
+  display: none; }
+
+#next {
+  grid-column: 1/-1; }
+
+span {
+  font-size: 12pt;
+  position: relative; }
+
+#nxt {
+  left: 24px; }
+
+#prev {
+  right: 24px; }
+
+.fab {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  outline: none;
+  border: none;
+  padding: 12px;
+  font-size: 24px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 6px; }
+  .fab:hover {
+    filter: brightness(50%); }
+  .fab:hover {
+    filter: brightness(50%); }
+
+.fa-facebook-f {
+  background: #3B5998; }
+
+.fa-twitter {
+  background: #55ACEE; }
+
+@media (max-width: 768px) {
+  .container {
+    margin: 16px 16px; }
+  h1 {
+    font-size: 16pt; }
+  .fa {
+    padding: 12px;
+    font-size: 16pt; } }
+
+@media (max-height: 650px) {
+  .container {
+    height: 500px; } }

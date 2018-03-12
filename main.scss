@@ -1,0 +1,120 @@
+$primary-color: #1D1F20;
+$secondary-color: #568BBD;
+$bkpnt-tablet: 768px;
+$bkpnt-phone: 300px;
+
+@mixin btn-behavior($padding) {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    
+    outline: none;
+    border: none;
+    padding: $padding;
+   &:hover {
+      filter: brightness(50%)
+    }
+}
+
+:root {
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    margin: 8px;
+}
+body {
+  background-color: $primary-color;
+}
+.container { 
+    background-color: white;
+    border-radius: 5px;
+    color:$primary-color;
+    height: 80%;
+    padding: 8px;
+    display: grid;
+    display: -ms-grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn-group {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+
+  button {
+    @include btn-behavior(8px);
+    background: white;
+    color: $primary-color;
+    border-radius: 5px;
+    justify-self: stretch;
+    margin-top: 5%;
+    text-align: center;
+  }
+}
+#previous {
+  display: none;
+}
+#next {
+  grid-column: 1/-1
+}
+
+span {
+  font-size: 12pt;
+  position: relative;
+}
+#nxt {
+  left: 24px;
+}
+#prev {
+  right: 24px;
+}
+
+
+.fab {
+   @include btn-behavior(12px);
+    font-size: 24px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 6px;
+  &:hover {
+    filter: brightness(50%);
+  }
+
+}
+
+.fa-facebook-f {
+    background: #3B5998;
+}
+.fa-twitter {
+    background: #55ACEE;
+}
+
+ @media(max-width: $bkpnt-tablet) {
+    .container {
+      margin: 16px 16px;
+   }
+   h1 {
+     font-size: 16pt;
+   }
+   .fa{
+     padding: 12px;
+     font-size: 16pt;
+   }
+}
+
+@media(max-height: 650px) {
+  .container {
+    height: 500px;
+  }
+}
