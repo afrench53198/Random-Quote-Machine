@@ -3,41 +3,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 </head>
 <body>
-  <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId            : '1790769074308211',
-          autoLogAppEvents : true,
-          xfbml            : true,
-          version          : 'v2.12',
-          cookies: true
-        });
-        if (typeof facebookInit == 'function') {
-        facebookInit();
-    }
-  };
-      (function(d){
-    var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
-    js = d.createElement('script'); js.id = id; js.async = true;
-    js.src = "//connect.facebook.net/en_US/all.js";
-    d.getElementsByTagName('head')[0].appendChild(js);
-}(document));
-    </script>
-                  
+                
     <div class="container" id="quote-machine">
         <h1 id="quote-text">Click The button for a random quote!</h1>
-        <div id="quote-content">
-        </div>
+          <div id="quote-content">
+          </div>
         <div class="btn-group" id ='btngrp'>
             <button id="previous"><span class="fas fa-arrow-left" id="prev"></span>Previous Quote</button>
             <button id="next">Get Quote<span id="nxt"></span></button>
          </div>
-          <footer id="share">
+        <footer id="share">
             <h3>Share</h3>
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-          </footer>
+            <a class="fab fa-facebook-f"></a>
+            <a class="fab fa-twitter"></a>
     </div>
     <script src="index.js"></script>
 </body>
